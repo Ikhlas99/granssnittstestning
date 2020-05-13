@@ -8,4 +8,3 @@ Feature: Search google
     Then the first test result should contain the word "rubber ducking"
 
 
-TEST TEST test test
