@@ -6,3 +6,6 @@ Feature: Search google
     When I enter search text "rubber ducking"
     And I click the search button
     Then the first test result should contain the word "rubber ducking"
+
+
+TEST TEST test test
