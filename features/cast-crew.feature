@@ -3,9 +3,7 @@ As a viewer I would be able to see all the cast and crew of any specific movie.
 
 Scenario: See Cast list in a movie
 Given that I am on the page of a specific movie
-And I have clicked the option 'see full cast and crew'
-Then I expect the page to show me the searched result
-And their name with the pictures
+Then I have clicked the link "See full cast"
 
 
 
