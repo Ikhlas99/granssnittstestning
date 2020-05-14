@@ -7,7 +7,7 @@ Feature:Add choices
     Given that I'm interested to searching IMDB
     And they are clickable menu there
     When I click on an item
-    And I see a summary about the show
-    Then I should also see a buton "add to watchlist"
+    Then I see a buton "add to watchlist"
+    And I should be able to add the show tom my watchlist
 
 
