@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="search-google;when-i-enter-a-keyword-in-google-search" tests="4" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\search-google.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I&apos;m at the search page" classname="search-google;when-i-enter-a-keyword-in-google-search" time="7.307572999">
+        </testcase>
+        <testcase name="When I enter search text &quot;rubber ducking&quot;" classname="search-google;when-i-enter-a-keyword-in-google-search" time="3.188298301">
+        </testcase>
+        <testcase name="And I click the search button" classname="search-google;when-i-enter-a-keyword-in-google-search" time="4.026924901">
+        </testcase>
+        <testcase name="Then the first test result should contain the word &quot;rubber ducking&quot;" classname="search-google;when-i-enter-a-keyword-in-google-search" time="0.099316">
+        </testcase>
+    </testsuite>
+</testsuites>
