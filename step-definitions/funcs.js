@@ -11,19 +11,26 @@ module.exports = {
   },
   sleep: function (ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-export async function $(selector) {
-  let elements = await driver.findElements(by.css(selector));
-  if (elements.length === 0) {
-    return null;
   }
-  if (elements.length === 1) {
-    return elements[0];
+}
+
+
+module.exports = {
+  $: async function (selector) {
+    let elements = await driver.findElements(by.css(selector));
+    if (elements.length === 0) {
+      return null;
+    }
+    if (elements.length === 1) {
+      return elements[0];
+    }
+    return elements;
+  },
+  sleep: function (ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
   }
-  return elements;
 }
-export function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+
 global.selectOption = async (cssSelector, optionName) => {
   let codeToRun = `(()=>{
       let select = document.querySelector('cssSelector');
