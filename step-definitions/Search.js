@@ -3,11 +3,7 @@ let { $, sleep } = require('./funcs');
 module.exports = function () {
   let sleepTime = 1000;
 
-  this.Given(/^that I am on the IMDB site$/, async function () {
-    await helpers.loadPage('https://www.imdb.com');
-  });
-
-  this.Given(/^I have pressed the All-DropDownMenu Button to expand search filters$/, async function () {
+  this.Given(/^that I have pressed the All-DropDownMenu Button to expand search filters$/, async function () {
     let allButton = await $('label.ipc-button:nth-child(1) > div:nth-child(1)');
     allButton.click();
     await sleep(sleepTime);
