@@ -1,70 +1,95 @@
 let { $, sleep } = require('./funcs');
 
+
 module.exports = function () {
 
 
+  let sleepTime = 1000;
 
-
-  this.When(/^I click a menuItem "([^"]*)"$/, async function (string) {
-    let menuItem = await $('ipc-list__item nav-link nav-link--hideXS nav-link--hideS nav-link--hideM sc-jTzLTM fjLstn ipc-list__item--indent-one')
-    await menuItem.click(string);
-    await sleep(3000)
+  this.Given(/^I am on IMDB website$/, async function () {
+    await helpers.loadPage('https://www.imdb.com');
+    await sleep(sleepTime);
   });
 
-  this.When(/^I click the element "([^"]*)"$/, async function () {
-    let element = await $('IMDb Home School: Educational Picks for Kids')
-    await element.click()
-    await sleep(1000)
-
+  this.When(/^I click on menu$/, async function () {
+    let menuClicked = await $('#imdbHeader-navDrawerOpen--desktop');
+    await menuClicked.click();
+    await sleep(sleepTime);
   });
+
+  this.When(/^I choose to click on What's on TV & Streaming$/, async function () {
+    let WhatsonTVClicked = await driver.wait(until.elementLocated(By.linkText('What\'s on TV & Streaming')));
+    await WhatsonTVClicked.click();
+  });
+
 
   this.Then(/^I should get a list of intersting tv shows$/, async function () {
 
-    let link = await driver.findElement(by.linkText('https://www.imdb.com/whats-on-tv/home-school/ls094700105/mediaviewer/rm3350135296'))
+    let elements = await driver.findElements(by.css('.pagecontent'));
+    //findElements ger oss en lista med 0 - många element;
+    let firstElement = elements[0];
+
+    // check that some of the elements and texts we expect in the list exist
+
+
+    await sleep(sleepTime);
+
+
   });
 
-  this.Given(/^that I'am at the IMDB sajt$/, function () {
-    // no code 
+  ///// the second step Definition
+
+  this.When(/^I click on Top Rated Shows elemnt$/, async function () {
+    let el = await driver.findElement(by.linkText('Top Rated Shows'));
+    await el.click()
+    await sleep(sleepTime)
   });
 
-  this.When(/^I click "([^"]*)" elemnt$/, async function (string) {
-    let el = await $('ipc - list__item nav - link sc - jTzLTM fjLstn ipc - list__item--indent - one')
-    await el.click(string)
-    await sleep(1000)
+
+  this.Then(/^I should see a list of the elemnt$/, async function () {
+
+    await driver.wait(until.elementLocated(By.css('div.lister')));
+    let headline = await $('h1.header');
+    let headlineText = await headline.getText();
+    expect(headlineText,
+      'Could not find the headline Top Rated TV Shows'
+    ).to.equal('Top Rated TV Shows');
+    await sleep(2000);
   });
 
-  this.Then(/^I should see a list of the elemnt$/, async function (searchList) {
 
-    let lists = await $('header')
-    let found = false
-    for (let list of lists) {
+  this.Then(/^ranking by 'Release Date'$/, async function () {
 
-
-      break
+    await selectOption('#lister-sort-by-options', 'Release Date');
+    let elements = await driver.findElements(By.css(".titleColumn > span"));
+    let years = [];
+    for (let element of elements) {
+      // getting the year part using splits on parenthesis
+      // and converting to number using +
+      years.push(+(await element.getText()).split('(')[1].split(')')[0]);
     }
+    /// we expect no year to be more than the first year
+    let wrongYears = years.filter(x => x > years[0]);
+    expect(wrongYears,
+      'Years before ' + years[0] + ' found later in list.'
+    ).to.be.empty;
 
-
+    await sleep(2000);
   });
-
-  this.Then(/^ranking by 'Number of Ratings'$/, async function () {
-
-    await selectOption('#lister-sort-by-options', 'Number of Ratings');
-
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

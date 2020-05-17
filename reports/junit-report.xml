@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="search-google;when-i-enter-a-keyword-in-google-search" tests="4" failures="0" skipped="0">
+    <testsuite name="choose-keyword;choose-keyword-and-entered-it" tests="6" failures="1" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\search-google.feature">
+            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\keyWord.feature">
             </property>
         </properties>
-        <testcase name="Given that I&apos;m at the search page" classname="search-google;when-i-enter-a-keyword-in-google-search" time="7.307572999">
+        <testcase name="Given I am at the search page" classname="choose-keyword;choose-keyword-and-entered-it" time="9.0599294">
         </testcase>
-        <testcase name="When I enter search text &quot;rubber ducking&quot;" classname="search-google;when-i-enter-a-keyword-in-google-search" time="3.188298301">
+        <testcase name="When I click on menu" classname="choose-keyword;choose-keyword-and-entered-it" time="1.39159">
         </testcase>
-        <testcase name="And I click the search button" classname="search-google;when-i-enter-a-keyword-in-google-search" time="4.026924901">
+        <testcase name="And I click at Help Center" classname="choose-keyword;choose-keyword-and-entered-it" time="3.203241601">
         </testcase>
-        <testcase name="Then the first test result should contain the word &quot;rubber ducking&quot;" classname="search-google;when-i-enter-a-keyword-in-google-search" time="0.099316">
+        <testcase name="And I entered &quot;How can I delete personal information IMDB stores about me?&quot; in the searchfield" classname="choose-keyword;choose-keyword-and-entered-it" time="3.274199099">
+        </testcase>
+        <testcase name="And I click at the search button" classname="choose-keyword;choose-keyword-and-entered-it" time="2.3413232">
+        </testcase>
+        <testcase name="Then I should get a result  of &quot;How can I delete personal information IMDB stores about me?&quot;" classname="choose-keyword;choose-keyword-and-entered-it" time="0.0221621">
+            <failure message="TypeError: headline.getText is not a function">TypeError: headline.getText is not a function
+    at createWorld.&lt;anonymous&gt; (C:\Users\ikhla\Desktop\granssnittstestning\step-definitions\keyWord.js:38:39)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
         </testcase>
     </testsuite>
 </testsuites>
