@@ -1,6 +1,8 @@
+let { $, sleep } = require('./funcs');
+
 module.exports = function () {
 
-  let sleepTime = 0;
+  let sleepTime = 1000;
   let clickedButton;
 
   this.Given(/^that i am already on IMDB website$/, async function () {
@@ -10,7 +12,7 @@ module.exports = function () {
 
   this.When(/^i click on born today$/, async function () {
     await helpers.loadPage('https://www.imdb.com/search/name/?birth_monthday=05-16&ref_=hm_brn_sm');
-    sleep(2000);
+    await sleep(sleepTime);
 
   });
 
@@ -19,7 +21,7 @@ module.exports = function () {
     clickedButton = await driver.wait(until.elementLocated(By.linkText('Lynn Collins')));
     expect(clickedButton, 'Button was not found');
     await clickedButton.click();
-    sleep(2000);
+    await sleep(sleepTime);
   });
 
 
@@ -29,19 +31,19 @@ module.exports = function () {
     clickedButton = await $('#imdb-jw-video-1');
     expect(clickedButton, 'Button was not found');
     await clickedButton.click();
-    await sleep(5000);
+    await sleep(2000);
   });
 
   this.Given(/^that i am already on born todays page$/, async function () {
     await helpers.loadPage('https://www.imdb.com/search/name/?birth_monthday=05-16&ref_=hm_brn_sm');
-    sleep(2000);
+    await sleep(2000);
   });
 
   this.Given(/^i click on A\-Z$/, async function () {
     clickedButton = await driver.wait(until.elementLocated(By.linkText('A-Z')));
     expect(clickedButton, 'Button was not found');
     await clickedButton.click();
-    sleep(2000);
+    await sleep(2000);
   });
 
   this.Given(/^i will be able to visit A\.J\.Feeley\.$/, async function () {
