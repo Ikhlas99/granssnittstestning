@@ -8,6 +8,11 @@ Scenario: Search non-existing movie/tvShow
     And I click on search button
     Then I should get an error message "No results found"
 
+Scenario: Search a movie and see its details
+    When I write "The Dark Knight" in search box
+    And I press down arrow and press ENTER key
+    Then I should be navigated to the details page of "The Dark Knight"
+
  Scenario: Finding robot movies
     Given that I have pressed the All-DropDownMenu Button to expand search filters
     And that I select 'Keywords' in the drop-down menu

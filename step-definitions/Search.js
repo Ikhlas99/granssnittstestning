@@ -24,6 +24,28 @@ module.exports = function () {
     await sleep(sleepTime);
   });
 
+  this.When(/^I write "([^"]*)" in search box$/, async function (input) {
+    let searchBar = await $('input[placeholder="Search IMDb"]');
+    expect(searchBar, 'Search bar not available');
+    searchBar.sendKeys(input);
+    await sleep(sleepTime);
+  });
+
+  this.When(/^I press down arrow and press ENTER key$/, async function () {
+    let searchBar = await $('input[placeholder="Search IMDb"');
+    await searchBar.sendKeys(selenium.Key.ARROW_DOWN);
+    await sleep(sleepTime);
+    await searchBar.sendKeys(selenium.Key.ENTER);
+    await sleep(sleepTime);
+  });
+
+  this.Then(/^I should be navigated to the details page of "([^"]*)"$/, async function (input) {
+    let wrapper = await driver.wait(until.elementLocated(By.css('.title_wrapper')));
+    let title = await wrapper.getText();
+    expect(title).to.include(input);
+    await sleep(sleepTime);
+  });
+
   this.Given(/^that I have pressed the All-DropDownMenu Button to expand search filters$/, async function () {
     let allButton = await $('label.ipc-button:nth-child(1) > div:nth-child(1)');
     allButton.click();
