@@ -1,24 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="choose-keyword;choose-keyword-and-entered-it" tests="6" failures="1" skipped="0">
+    <testsuite name="i-want-to-visit-born-today-and-find-out-more.;i-want-to-be-able-to-visit-lynn-collins" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\keyWord.feature">
+            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\Birth.feature">
             </property>
         </properties>
-        <testcase name="Given I am at the search page" classname="choose-keyword;choose-keyword-and-entered-it" time="9.0599294">
+        <testcase name="Given that i am already on IMDB website" classname="i-want-to-visit-born-today-and-find-out-more.;i-want-to-be-able-to-visit-lynn-collins" time="6.383589601">
         </testcase>
-        <testcase name="When I click on menu" classname="choose-keyword;choose-keyword-and-entered-it" time="1.39159">
+        <testcase name="When i click on born today" classname="i-want-to-visit-born-today-and-find-out-more.;i-want-to-be-able-to-visit-lynn-collins" time="2.886682299">
         </testcase>
-        <testcase name="And I click at Help Center" classname="choose-keyword;choose-keyword-and-entered-it" time="3.203241601">
+        <testcase name="And i choose to click on Lynn Collins." classname="i-want-to-visit-born-today-and-find-out-more.;i-want-to-be-able-to-visit-lynn-collins" time="4.2593647">
         </testcase>
-        <testcase name="And I entered &quot;How can I delete personal information IMDB stores about me?&quot; in the searchfield" classname="choose-keyword;choose-keyword-and-entered-it" time="3.274199099">
+    </testsuite>
+    <testsuite name="i-want-to-visit-born-today-and-find-out-more.;after-i-visit-miranda-i-will-be-able-to-watch-the-trailer" tests="4" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\Birth.feature">
+            </property>
+        </properties>
+        <testcase name="Given that i am already on IMDB website" classname="i-want-to-visit-born-today-and-find-out-more.;after-i-visit-miranda-i-will-be-able-to-watch-the-trailer" time="6.9306733">
         </testcase>
-        <testcase name="And I click at the search button" classname="choose-keyword;choose-keyword-and-entered-it" time="2.3413232">
+        <testcase name="When i click on born today" classname="i-want-to-visit-born-today-and-find-out-more.;after-i-visit-miranda-i-will-be-able-to-watch-the-trailer" time="2.4833613">
         </testcase>
-        <testcase name="Then I should get a result  of &quot;How can I delete personal information IMDB stores about me?&quot;" classname="choose-keyword;choose-keyword-and-entered-it" time="0.0221621">
-            <failure message="TypeError: headline.getText is not a function">TypeError: headline.getText is not a function
-    at createWorld.&lt;anonymous&gt; (C:\Users\ikhla\Desktop\granssnittstestning\step-definitions\keyWord.js:38:39)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+        <testcase name="When i choose to click on Lynn Collins." classname="i-want-to-visit-born-today-and-find-out-more.;after-i-visit-miranda-i-will-be-able-to-watch-the-trailer" time="3.8595504">
+        </testcase>
+        <testcase name="And i click on the trailer and I will be able to watch it." classname="i-want-to-visit-born-today-and-find-out-more.;after-i-visit-miranda-i-will-be-able-to-watch-the-trailer" time="9.9237079">
+        </testcase>
+    </testsuite>
+    <testsuite name="i-want-to-visit-born-today-and-find-out-more.;when-i-visit-born-todays-page-i-will-be-able-to-sort-it-a-z" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\Birth.feature">
+            </property>
+        </properties>
+        <testcase name="Given that i am already on born todays page" classname="i-want-to-visit-born-today-and-find-out-more.;when-i-visit-born-todays-page-i-will-be-able-to-sort-it-a-z" time="7.8793078">
+        </testcase>
+        <testcase name="And i click on A-Z" classname="i-want-to-visit-born-today-and-find-out-more.;when-i-visit-born-todays-page-i-will-be-able-to-sort-it-a-z" time="6.833597299">
+        </testcase>
+        <testcase name="And i will be able to visit A.J.Feeley." classname="i-want-to-visit-born-today-and-find-out-more.;when-i-visit-born-todays-page-i-will-be-able-to-sort-it-a-z" time="2.978591001">
         </testcase>
     </testsuite>
 </testsuites>
