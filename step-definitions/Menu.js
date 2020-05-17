@@ -22,20 +22,19 @@ module.exports = function () {
     expect(listLength).to.not.equal(0, 'Top Rated movies list cannot be empty');
   });
 
-  this.When(/^I press "([^"]*)"$/, async function (link) {
+  this.When(/^I press "([^"]*)" to see list of upcoming movies for current month$/, async function (link) {
     let comingSoonLink = await driver.wait(until.elementLocated(By.linkText(link)));
     await comingSoonLink.click();
     expect(comingSoonLink, 'Unable to find Coming Soon link in menu items');
   });
 
-  this.When(/^I click "([^"]*)"$/, async function (next) {
+  this.When(/^I click "([^"]*)" to show upcoming movies for next month$/, async function (next) {
     driver.findElement(By.linkText(next)).click();
     await sleep(5000);
   });
 
   this.Then(/^I should see movies list upcoming in next month$/, async function () {
     let item = await driver.findElement(By.id('img_primary'));
-    console.log(item);
     assert(item !== null, 'Upcoming movies list can not be empty for June')
   });
 }

@@ -9,7 +9,7 @@ Feature: As a user I want to search a movie by using different filters
     Then I should get non-empty list of the top rated movies
 
   Scenario: Find upcoming movies
-    When I press "Coming Soon"
-    When I click "Next"
+    When I press "Coming Soon" to see list of upcoming movies for current month
+    And I click "Next" to show upcoming movies for next month
     Then I should see movies list upcoming in next month
   
