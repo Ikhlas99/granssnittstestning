@@ -33,7 +33,7 @@ module.exports = function () {
   });
 
 
-  ///////////  Job Field  ////////
+  //////////////////            Job Field            /////////////
 
   this.When(/^I click on Jobs$/, async function () {
     let jobField = await driver.findElement(by.linkText('Jobs'))

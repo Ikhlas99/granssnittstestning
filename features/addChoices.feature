@@ -12,9 +12,10 @@ Feature:Add choices
 
   Scenario:
     Given that I click on menu
-    Then I click the Top Rated Movies
+    And I click the Top Rated Movies
     And I click on the favorite movie 'Nyckeln till frihet'
-    And I should be able to add the item to my watchlist
+    When I click on the 'Add to Watchlist'
+    Then I should be able to add the item to my watchlist
 
 
 

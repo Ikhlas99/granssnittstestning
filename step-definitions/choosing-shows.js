@@ -4,7 +4,7 @@ let { $, sleep } = require('./funcs');
 module.exports = function () {
 
 
-  let sleepTime = 1000;
+  let sleepTime = 1500;
 
   this.Given(/^I am on IMDB website$/, async function () {
     await helpers.loadPage('https://www.imdb.com');
@@ -14,6 +14,7 @@ module.exports = function () {
   this.When(/^I click on menu$/, async function () {
     let menuClicked = await $('#imdbHeader-navDrawerOpen--desktop');
     await menuClicked.click();
+    assert(menuClicked, 'Menu not found');
     await sleep(sleepTime);
   });
 
@@ -23,25 +24,23 @@ module.exports = function () {
   });
 
 
-  this.Then(/^I should get a list of intersting tv shows$/, async function () {
+  this.Then(/^I should get a result of intersting tv shows$/, async function () {
 
     let elements = await driver.findElements(by.css('.pagecontent'));
     //findElements ger oss en lista med 0 - många element;
     let firstElement = elements[0];
-
-    // check that some of the elements and texts we expect in the list exist
-
 
     await sleep(sleepTime);
 
 
   });
 
-  ///// the second step Definition
+  ////////////       Top Rated Shows Ranking by Release Date         / /////////////
 
   this.When(/^I click on Top Rated Shows elemnt$/, async function () {
     let el = await driver.findElement(by.linkText('Top Rated Shows'));
     await el.click()
+    expect(el, 'Top Rated Show is not found');
     await sleep(sleepTime)
   });
 
@@ -54,7 +53,7 @@ module.exports = function () {
     expect(headlineText,
       'Could not find the headline Top Rated TV Shows'
     ).to.equal('Top Rated TV Shows');
-    await sleep(2000);
+    await sleep(sleepTime);
   });
 
 
@@ -74,7 +73,7 @@ module.exports = function () {
       'Years before ' + years[0] + ' found later in list.'
     ).to.be.empty;
 
-    await sleep(2000);
+    await sleep(1500);
   });
 
 
