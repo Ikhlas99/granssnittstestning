@@ -52,13 +52,13 @@ module.exports = function () {
     await sleep(sleepTime);
   });
 
-  this.Given(/^that I select 'Keywords' in the drop\-down menu$/, async function () {
+  this.When(/^that I have selected 'Keywords' in the drop\-down menu$/, async function () {
     await driver.wait(until.elementLocated(by.css('a[role="menuitem"]')));
     await driver.findElement(By.linkText('Keywords')).click();
     await sleep(sleepTime);
   });
 
-  this.Given(/^write "([^"]*)" in the searchfield, I should see list of matching keywords$/, async function (keyword) {
+  this.When(/^write "([^"]*)" in the searchfield, I should see list of matching keywords$/, async function (keyword) {
     let lookUp = await $('input[placeholder= "Search IMDb"]');
     await lookUp.sendKeys(keyword);
     await lookUp.sendKeys(selenium.Key.ENTER);
@@ -66,24 +66,24 @@ module.exports = function () {
     await driver.wait(until.elementLocated(by.css('.result_text')));
   });
 
-  this.Given(/^that i click a link "([^"]*)"$/, async function (link) {
+  this.When(/^that i click a link "([^"]*)"$/, async function (link) {
     let linkToClick = await driver.findElement(By.linkText(link));
     await linkToClick.click();
     await sleep(sleepTime);
   });
 
-  this.Given(/^that I have pressed the Sort by drop-down to expand sort filters$/, async function () {
+  this.When(/^that I have pressed the Sort by drop-down to expand sort filters$/, async function () {
     let sortByView = await $('.lister-sort-by');
     sortByView.click();
     await sleep(sleepTime);
   });
 
-  this.Given(/^that I select 'IMDb Raing' in the drop\-down menu$/, async function () {
+  this.When(/^that I select 'IMDb Raing' in the drop\-down menu$/, async function () {
     await driver.findElement(By.css('.lister-sort-by option:nth-child(3)')).click();
-    await sleep(4000);
+    await sleep(sleepTime * 4);
   });
 
-  this.Given(/^i should see results sorted by rating in descending order$/, async function () {
+  this.Then(/^i should see results sorted by rating in descending order$/, async function () {
     //Nothing to do here
   });
 }

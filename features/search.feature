@@ -15,7 +15,7 @@ Scenario: Search a movie and see its details
 
  Scenario: Finding robot movies
     Given that I have pressed the All-DropDownMenu Button to expand search filters
-    And that I select 'Keywords' in the drop-down menu
+    When I have selected 'Keywords' in the drop-down menu
     And write "robot" in the searchfield, I should see list of matching keywords
     And that i click a link "robot"
     And that I have pressed the Sort by drop-down to expand sort filters
