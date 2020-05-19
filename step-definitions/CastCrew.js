@@ -35,4 +35,18 @@ module.exports = function () {
     expect(divImage, 'Not on details page').to.exist;
     await sleep(sleepTime);
   });
+
+  this.Then(/^I click on videos view and navigate to player screen$/, async function () {
+    let videosSection = await $('.heroWidget');
+    expect(videosSection, 'Videos section not found');
+    await videosSection.click();
+    await sleep(sleepTime * 3);
+  });
+
+  this.Then(/^I click on player and can see video playing$/, async function () {
+    let videoView = await $('#imdb-jw-video-1');
+    expect(videoView, 'Video view not found');
+    await videoView.click();
+    await sleep(sleepTime * 5);
+  });
 }

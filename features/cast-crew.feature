@@ -10,5 +10,6 @@ Scenario: See specific Cast details
 Given that I am on the page of a specific movie
 When I click specific cast member
 Then I expect to see its details page
-
+And I click on videos view and navigate to player screen
+And I click on player and can see video playing
 
