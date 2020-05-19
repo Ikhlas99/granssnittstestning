@@ -1,141 +1,62 @@
 [
   {
-    "description": "  As a user I'm interesting to add choices to my account\n  to keep track of what I want to watch",
     "elements": [
       {
-        "id": "add-choices;",
+        "id": "i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release.",
         "keyword": "Scenario",
-        "line": 13,
-        "name": "",
+        "line": 5,
+        "name": "Visit any upcoming release.",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "I am on IMDB website",
+            "name": "that i am on imdb website",
             "result": {
               "status": "passed",
-              "duration": 7410991200
+              "duration": 9002708900
             },
             "line": 6,
             "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\choosing-shows.js:9"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click at sign in",
-            "result": {
-              "status": "passed",
-              "duration": 2759193100
-            },
-            "line": 7,
-            "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\addChoices.js:7"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click sign in with IMBD",
-            "result": {
-              "status": "passed",
-              "duration": 2524290001
-            },
-            "line": 8,
-            "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\addChoices.js:13"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I log into the my account with credentials",
-            "result": {
-              "status": "passed",
-              "duration": 1002172499
-            },
-            "line": 9,
-            "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\addChoices.js:19"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the last click sign in",
-            "result": {
-              "status": "passed",
-              "duration": 4091516999
-            },
-            "line": 10,
-            "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\addChoices.js:27"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that I click on menu",
-            "result": {
-              "status": "passed",
-              "duration": 2318993100
-            },
-            "line": 14,
-            "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\addChoices.js:34"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click the Top Rated Movies",
-            "result": {
-              "status": "passed",
-              "duration": 3579668200
-            },
-            "line": 15,
-            "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\addChoices.js:41"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on the favorite movie 'Nyckeln till frihet'",
-            "result": {
-              "status": "passed",
-              "duration": 4301699100
-            },
-            "line": 16,
-            "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\addChoices.js:49"
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:8"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on the 'Add to Watchlist'",
+            "name": "i click on the menu",
             "result": {
               "status": "passed",
-              "duration": 264400
+              "duration": 610757700
             },
-            "line": 17,
+            "line": 7,
             "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\addChoices.js:57"
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:12"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be able to add the item to my watchlist",
+            "keyword": "And ",
+            "name": "i choose to click on 'upcoming releases'",
             "result": {
               "status": "passed",
-              "duration": 2248279300
+              "duration": 5065355200
             },
-            "line": 18,
+            "line": 8,
             "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\addChoices.js:62"
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "i will choose to click on 'Unhinged' from the list.",
+            "result": {
+              "status": "passed",
+              "duration": 4214316600
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:24"
             }
           },
           {
@@ -143,7 +64,107 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2218665499
+              "duration": 2993030300
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release.",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Visit any upcoming release.",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that i am on imdb website",
+            "result": {
+              "status": "passed",
+              "duration": 8820487001
+            },
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i click on the menu",
+            "result": {
+              "status": "passed",
+              "duration": 507260701
+            },
+            "line": 15,
+            "match": {
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "i choose to click on 'upcoming releases'",
+            "result": {
+              "status": "passed",
+              "duration": 3186078699
+            },
+            "line": 16,
+            "match": {
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "i will choose to click on 'Unhinged' from the list.",
+            "result": {
+              "status": "passed",
+              "duration": 4479403801
+            },
+            "line": 17,
+            "match": {
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:24"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "choose to see the trailer",
+            "result": {
+              "status": "passed",
+              "duration": 3510900199
+            },
+            "line": 18,
+            "match": {
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "be able to watch",
+            "result": {
+              "status": "passed",
+              "duration": 2413417099
+            },
+            "line": 19,
+            "match": {
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:37"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 3184655600
             },
             "hidden": true,
             "match": {
@@ -155,11 +176,11 @@
         "type": "scenario"
       }
     ],
-    "id": "add-choices",
+    "id": "i-want-to-see-the-upcoming-releases-in-the-united-states.",
     "keyword": "Feature",
     "line": 1,
-    "name": "Add choices",
+    "name": "I want to see the upcoming releases in the United States.",
     "tags": [],
-    "uri": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\features\\addChoices.feature"
+    "uri": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\features\\Releases.feature"
   }
 ]

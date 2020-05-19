@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="add-choices;" tests="10" failures="0" skipped="0">
+    <testsuite name="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." tests="4" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\addChoices.feature">
+            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\Releases.feature">
             </property>
         </properties>
-        <testcase name="Given I am on IMDB website" classname="add-choices;" time="7.4109912">
+        <testcase name="Given that i am on imdb website" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="9.0027089">
         </testcase>
-        <testcase name="And I click at sign in" classname="add-choices;" time="2.7591931">
+        <testcase name="When i click on the menu" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="0.6107577">
         </testcase>
-        <testcase name="And I click sign in with IMBD" classname="add-choices;" time="2.524290001">
+        <testcase name="And i choose to click on &apos;upcoming releases&apos;" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="5.0653552">
         </testcase>
-        <testcase name="And I log into the my account with credentials" classname="add-choices;" time="1.002172499">
+        <testcase name="And i will choose to click on &apos;Unhinged&apos; from the list." classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="4.2143166">
         </testcase>
-        <testcase name="And the last click sign in" classname="add-choices;" time="4.091516999">
+    </testsuite>
+    <testsuite name="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." tests="6" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\Releases.feature">
+            </property>
+        </properties>
+        <testcase name="Given that i am on imdb website" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="8.820487001">
         </testcase>
-        <testcase name="Given that I click on menu" classname="add-choices;" time="2.3189931">
+        <testcase name="When i click on the menu" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="0.507260701">
         </testcase>
-        <testcase name="And I click the Top Rated Movies" classname="add-choices;" time="3.5796682">
+        <testcase name="And i choose to click on &apos;upcoming releases&apos;" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="3.186078699">
         </testcase>
-        <testcase name="And I click on the favorite movie &apos;Nyckeln till frihet&apos;" classname="add-choices;" time="4.3016991">
+        <testcase name="And i will choose to click on &apos;Unhinged&apos; from the list." classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="4.479403801">
         </testcase>
-        <testcase name="When I click on the &apos;Add to Watchlist&apos;" classname="add-choices;" time="0.0002644">
+        <testcase name="Then choose to see the trailer" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="3.510900199">
         </testcase>
-        <testcase name="Then I should be able to add the item to my watchlist" classname="add-choices;" time="2.2482793">
+        <testcase name="And be able to watch" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="2.413417099">
         </testcase>
     </testsuite>
 </testsuites>
