@@ -14,9 +14,9 @@ Scenario: Search a movie and see its details
     Then I should be navigated to the details page of "The Dark Knight"
 
  Scenario: Finding robot movies
-    Given that I have pressed the All-DropDownMenu Button to expand search filters
-    When I have selected 'Keywords' in the drop-down menu
-    And write "robot" in the searchfield, I should see list of matching keywords
+    When I have pressed the All-DropDownMenu Button to expand search filters
+    And I have selected 'Keywords' in the drop-down menu
+    And I write "robot" in the searchfield, I should see list of matching keywords
     And that i click a link "robot"
     And that I have pressed the Sort by drop-down to expand sort filters
     And that I select 'IMDb Raing' in the drop-down menu

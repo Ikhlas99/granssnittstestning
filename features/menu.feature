@@ -8,7 +8,7 @@ Feature: As a user I want to search a movie by using different filters
     When I press the "Top Rated Movies"
     Then I should get non-empty list of the top rated movies
 
-  Scenario: Find upcoming movies
+  Scenario: Find upcoming movies of current month and next month
     When I press "Coming Soon" to see list of upcoming movies for current month
     And I click "Next" to show upcoming movies for next month
     Then I should see movies list upcoming in next month

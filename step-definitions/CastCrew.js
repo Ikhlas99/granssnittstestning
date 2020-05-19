@@ -21,4 +21,18 @@ module.exports = function () {
     expect(length).to.not.equal(0, 'Cast list cannot be empty');
     await sleep(sleepTime);
   });
+
+  this.When(/^I click specific cast member$/, async function () {
+    let castList = await $('.primary_photo');
+    let length = [...castList].length;
+    expect(length).to.not.equal(0, 'Cast list cannot be empty');
+    castList[0].click();
+    await sleep(sleepTime * 2);
+  });
+
+  this.Then(/^I expect to see its details page$/, async function () {
+    let divImage = await $('.image');
+    expect(divImage, 'Not on details page').to.exist;
+    await sleep(sleepTime);
+  });
 }

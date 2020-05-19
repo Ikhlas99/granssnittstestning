@@ -46,19 +46,19 @@ module.exports = function () {
     await sleep(sleepTime);
   });
 
-  this.Given(/^that I have pressed the All-DropDownMenu Button to expand search filters$/, async function () {
+  this.When(/^I have pressed the All-DropDownMenu Button to expand search filters$/, async function () {
     let allButton = await $('label.ipc-button:nth-child(1) > div:nth-child(1)');
     allButton.click();
     await sleep(sleepTime);
   });
 
-  this.When(/^that I have selected 'Keywords' in the drop\-down menu$/, async function () {
+  this.When(/^I have selected 'Keywords' in the drop\-down menu$/, async function () {
     await driver.wait(until.elementLocated(by.css('a[role="menuitem"]')));
     await driver.findElement(By.linkText('Keywords')).click();
     await sleep(sleepTime);
   });
 
-  this.When(/^write "([^"]*)" in the searchfield, I should see list of matching keywords$/, async function (keyword) {
+  this.When(/^I write "([^"]*)" in the searchfield, I should see list of matching keywords$/, async function (keyword) {
     let lookUp = await $('input[placeholder= "Search IMDb"]');
     await lookUp.sendKeys(keyword);
     await lookUp.sendKeys(selenium.Key.ENTER);

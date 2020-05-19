@@ -6,6 +6,9 @@ Given that I am on the page of a specific movie
 When I click the link "See full cast"
 Then I expect to get a list with the names and pictures of the cast of that movie
 
-
+Scenario: See specific Cast details
+Given that I am on the page of a specific movie
+When I click specific cast member
+Then I expect to see its details page
 
 
