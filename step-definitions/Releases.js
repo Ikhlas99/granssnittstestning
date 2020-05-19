@@ -2,7 +2,7 @@ let { $, sleep } = require('./funcs');
 
 module.exports = function () {
 
-  let sleepTime = 0;
+  let sleepTime = 1000;
   let clickedButton;
 
   this.Given(/^that i am on imdb website$/, async function () {
