@@ -1,6 +1,8 @@
 let { $, sleep } = require('./funcs');
 
 module.exports = function () {
+  let sleepTime = 1000;
+
   this.Given(/^that I am on the IMDB website$/, async function () {
     await helpers.loadPage('https://www.imdb.com');
   });
@@ -30,7 +32,7 @@ module.exports = function () {
 
   this.When(/^I click "([^"]*)" to show upcoming movies for next month$/, async function (next) {
     driver.findElement(By.linkText(next)).click();
-    await sleep(5000);
+    await sleep(sleepTime * 5);
   });
 
   this.Then(/^I should see movies list upcoming in next month$/, async function () {
