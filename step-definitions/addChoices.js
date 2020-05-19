@@ -2,8 +2,6 @@ let { $, sleep } = require('./funcs');
 
 module.exports = function () {
 
-  // let { username, password } = require('./credentials.json');
-
   this.Given(/^I click at sign in$/, async function () {
     let el = await driver.findElement(by.linkText('Sign In'));
     await el.click()
