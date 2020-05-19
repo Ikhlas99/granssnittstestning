@@ -6,7 +6,7 @@ Feature:A list of Tv shows
     Given I am on IMDB website
     When I click on menu
     And I choose to click on What's on TV & Streaming
-    Then I should get a list of intersting tv shows
+    Then I should get a result of intersting tv shows
 
 
   Scenario: Seaching after specific information

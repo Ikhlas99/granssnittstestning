@@ -16,13 +16,11 @@ module.exports = function () {
     await sleep(2000)
   });
 
-
   this.Given(/^I log into the my account with credentials$/, async function () {
 
     driver.findElement(By.css("#ap_email")).sendKeys("alansara33@gmail.com");
     driver.findElement(By.css("#ap_password")).sendKeys("hemlig33");
     await sleep(1000)
-
 
   });
 
@@ -67,11 +65,11 @@ module.exports = function () {
     expect(topAdded, 'data is not inlogged').to.exist;
 
     await topAdded.click()
-    //await sleep(2000)
+    expect(topAdded, 'topAdded is not found').to.exist;
+    await sleep(1500)
 
-    let isWachListed = await $('[data-is-watchlisted="true"]');
-    expect(isWachListed, 'wachListed is not found').to.exist;
-    await sleep(3000)
+    /*let isWachListed = await $('[data-is-watchlisted="true"]');
+    await sleep(3000)*/
   });
 
 

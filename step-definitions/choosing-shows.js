@@ -32,8 +32,8 @@ module.exports = function () {
 
     await sleep(sleepTime);
 
-
   });
+
 
   ////////////       Top Rated Shows Ranking by Release Date         / /////////////
 
@@ -43,7 +43,6 @@ module.exports = function () {
     expect(el, 'Top Rated Show is not found');
     await sleep(sleepTime)
   });
-
 
   this.Then(/^I should see a list of the elemnt$/, async function () {
 
