@@ -7,6 +7,7 @@ module.exports = function () {
 
   this.Given(/^that i am on imdb website$/, async function () {
     await helpers.loadPage('https://www.imdb.com/');
+    await sleep(sleepTime);
   });
 
   this.When(/^i click on the menu$/, async function () {
