@@ -1,4 +1,5 @@
-Feature: As A user I'am intersted to share
+Feature: Rating som program
+  As A user I'am intersted to Rating
   som program somtimes.
 
   Background:Login in IMDB
