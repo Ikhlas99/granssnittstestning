@@ -13,9 +13,8 @@ Feature: Get result from the serchfield
 
   Scenario: Reserch at the Jobs
     Given I am at the search page
-    When I click on Jobs
-    And I entered the text "Software Test Engineer"
-    And I entered at the another serchfiled "Stockholm, Stockholm County, Sweden"
-    And I click at the search button to get the result
-    Then I expect get a list of "Software test engineer"
-    And sorted by Most recent
+    When I clicked the All-DropDownMenu button
+    And I select 'Titles' in the drop-down menu
+    And I write "the best offer" in the searchfield
+    Then I expect get a list of "the best offer"
+

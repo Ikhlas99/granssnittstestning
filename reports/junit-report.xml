@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." tests="4" failures="0" skipped="0">
+    <testsuite name="get-result-from-the-serchfield;reserch-at-the-help-center" tests="5" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\Releases.feature">
+            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\keyWord.feature">
             </property>
         </properties>
-        <testcase name="Given that i am on imdb website" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="9.0027089">
+        <testcase name="Given I am at the search page" classname="get-result-from-the-serchfield;reserch-at-the-help-center" time="10.6807267">
         </testcase>
-        <testcase name="When i click on the menu" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="0.6107577">
+        <testcase name="When I click on menu" classname="get-result-from-the-serchfield;reserch-at-the-help-center" time="1.873416">
         </testcase>
-        <testcase name="And i choose to click on &apos;upcoming releases&apos;" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="5.0653552">
+        <testcase name="And I click at Help Center" classname="get-result-from-the-serchfield;reserch-at-the-help-center" time="2.527843201">
         </testcase>
-        <testcase name="And i will choose to click on &apos;Unhinged&apos; from the list." classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="4.2143166">
+        <testcase name="And I entered &quot;How can I delete personal information IMDB stores about me?&quot; in the searchfield" classname="get-result-from-the-serchfield;reserch-at-the-help-center" time="2.253093">
+        </testcase>
+        <testcase name="And I click at the search button to get the result" classname="get-result-from-the-serchfield;reserch-at-the-help-center" time="2.3541129">
         </testcase>
     </testsuite>
-    <testsuite name="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." tests="6" failures="0" skipped="0">
+    <testsuite name="get-result-from-the-serchfield;reserch-at-the-jobs" tests="5" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\Releases.feature">
+            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\keyWord.feature">
             </property>
         </properties>
-        <testcase name="Given that i am on imdb website" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="8.820487001">
+        <testcase name="Given I am at the search page" classname="get-result-from-the-serchfield;reserch-at-the-jobs" time="10.7823904">
         </testcase>
-        <testcase name="When i click on the menu" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="0.507260701">
+        <testcase name="When I clicked the All-DropDownMenu button" classname="get-result-from-the-serchfield;reserch-at-the-jobs" time="2.020268499">
         </testcase>
-        <testcase name="And i choose to click on &apos;upcoming releases&apos;" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="3.186078699">
+        <testcase name="And I select &apos;Titles&apos; in the drop-down menu" classname="get-result-from-the-serchfield;reserch-at-the-jobs" time="2.467315">
         </testcase>
-        <testcase name="And i will choose to click on &apos;Unhinged&apos; from the list." classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="4.479403801">
+        <testcase name="And I write &quot;the best offer&quot; in the searchfield" classname="get-result-from-the-serchfield;reserch-at-the-jobs" time="2.879315801">
         </testcase>
-        <testcase name="Then choose to see the trailer" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="3.510900199">
-        </testcase>
-        <testcase name="And be able to watch" classname="i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release." time="2.413417099">
+        <testcase name="Then I expect get a list of &quot;the best offer&quot;" classname="get-result-from-the-serchfield;reserch-at-the-jobs" time="2.133713">
         </testcase>
     </testsuite>
 </testsuites>

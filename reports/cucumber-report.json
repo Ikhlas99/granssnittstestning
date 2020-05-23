@@ -1,62 +1,76 @@
 [
   {
+    "description": "  As a user I want to reserch different issue\n  by entering these at the different serchfield.",
     "elements": [
       {
-        "id": "i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release.",
+        "id": "get-result-from-the-serchfield;reserch-at-the-help-center",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "Visit any upcoming release.",
+        "line": 6,
+        "name": "Reserch at the help center",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that i am on imdb website",
+            "name": "I am at the search page",
             "result": {
               "status": "passed",
-              "duration": 9002708900
+              "duration": 10680726700
             },
-            "line": 6,
+            "line": 7,
             "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:8"
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\keyWord.js:8"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "i click on the menu",
+            "name": "I click on menu",
             "result": {
               "status": "passed",
-              "duration": 610757700
-            },
-            "line": 7,
-            "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:12"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "i choose to click on 'upcoming releases'",
-            "result": {
-              "status": "passed",
-              "duration": 5065355200
+              "duration": 1873416000
             },
             "line": 8,
             "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:18"
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\choosing-shows.js:14"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "i will choose to click on 'Unhinged' from the list.",
+            "name": "I click at Help Center",
             "result": {
               "status": "passed",
-              "duration": 4214316600
+              "duration": 2527843201
             },
             "line": 9,
             "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:24"
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\keyWord.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I entered \"How can I delete personal information IMDB stores about me?\" in the searchfield",
+            "result": {
+              "status": "passed",
+              "duration": 2253093000
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\keyWord.js:21"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click at the search button to get the result",
+            "result": {
+              "status": "passed",
+              "duration": 2354112900
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\keyWord.js:29"
             }
           },
           {
@@ -64,7 +78,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2993030300
+              "duration": 2704439000
             },
             "hidden": true,
             "match": {
@@ -76,87 +90,74 @@
         "type": "scenario"
       },
       {
-        "id": "i-want-to-see-the-upcoming-releases-in-the-united-states.;visit-any-upcoming-release.",
+        "id": "get-result-from-the-serchfield;reserch-at-the-jobs",
         "keyword": "Scenario",
-        "line": 13,
-        "name": "Visit any upcoming release.",
+        "line": 14,
+        "name": "Reserch at the Jobs",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that i am on imdb website",
+            "name": "I am at the search page",
             "result": {
               "status": "passed",
-              "duration": 8820487001
+              "duration": 10782390400
             },
-            "line": 14,
+            "line": 15,
             "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:8"
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\keyWord.js:8"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "i click on the menu",
+            "name": "I clicked the All-DropDownMenu button",
             "result": {
               "status": "passed",
-              "duration": 507260701
-            },
-            "line": 15,
-            "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:12"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "i choose to click on 'upcoming releases'",
-            "result": {
-              "status": "passed",
-              "duration": 3186078699
+              "duration": 2020268499
             },
             "line": 16,
             "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:18"
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\keyWord.js:40"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "i will choose to click on 'Unhinged' from the list.",
+            "name": "I select 'Titles' in the drop-down menu",
             "result": {
               "status": "passed",
-              "duration": 4479403801
+              "duration": 2467315000
             },
             "line": 17,
             "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:24"
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\keyWord.js:46"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I write \"the best offer\" in the searchfield",
+            "result": {
+              "status": "passed",
+              "duration": 2879315801
+            },
+            "line": 18,
+            "match": {
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\keyWord.js:52"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "choose to see the trailer",
+            "name": "I expect get a list of \"the best offer\"",
             "result": {
               "status": "passed",
-              "duration": 3510900199
-            },
-            "line": 18,
-            "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:30"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "be able to watch",
-            "result": {
-              "status": "passed",
-              "duration": 2413417099
+              "duration": 2133713000
             },
             "line": 19,
             "match": {
-              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\Releases.js:37"
+              "location": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\step-definitions\\keyWord.js:60"
             }
           },
           {
@@ -164,7 +165,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3184655600
+              "duration": 3481020899
             },
             "hidden": true,
             "match": {
@@ -176,11 +177,11 @@
         "type": "scenario"
       }
     ],
-    "id": "i-want-to-see-the-upcoming-releases-in-the-united-states.",
+    "id": "get-result-from-the-serchfield",
     "keyword": "Feature",
     "line": 1,
-    "name": "I want to see the upcoming releases in the United States.",
+    "name": "Get result from the serchfield",
     "tags": [],
-    "uri": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\features\\Releases.feature"
+    "uri": "C:\\Users\\ikhla\\Desktop\\granssnittstestning\\features\\keyWord.feature"
   }
 ]

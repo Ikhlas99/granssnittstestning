@@ -37,53 +37,33 @@ module.exports = function () {
 
   //////////////////            Job Field            /////////////
 
-  this.When(/^I click on Jobs$/, async function () {
-    let jobField = await driver.findElement(by.linkText('Jobs'))
-    await jobField.click()
-    await sleep(1000)
-  });
-
-  this.When(/^I entered the text "([^"]*)"$/, async function (searchWord) {
-    let searchJob = await driver.wait(until.elementLocated(By.css('input[placeholder="Search for jobs by title or keyword"]')), 5000);
-
-    await searchJob.sendKeys(searchWord)
-    //await searchJob.sendKeys(selenium.Key.ENTER);
-    await sleep(1000)
-  });
-
-  this.When(/^I entered at the another serchfiled "([^"]*)"$/, async function (city) {
-    let searchCity = await $('input[placeholder="Location"]');
-    assert(searchCity, 'I cant found the right location')
-    await searchCity.sendKeys(city)
-    await searchJob.sendKeys(selenium.Key.ENTER);
-    await sleep(1000)
-  });
-
-  this.Then(/^I expect get a list of "([^"]*)"$/, async function () {
-    await driver.wait(until.elementLocated(By.css('div.dropdown-menu')));
-    let role = await $('listbox');
-    let headlineText = await role.getText();
-    expect(headlineText,
-      'Could not find the looking job'
-    ).to.equal('Software test engineer');
+  this.When(/^I clicked the All-DropDownMenu button$/, async function () {
+    let allElement = await $('label.ipc-button:nth-child(1) > div:nth-child(1)');
+    allElement.click();
     await sleep(2000);
   });
 
-  this.Then(/^sorted by Most recent$/, async function () {
-    await selectOption('.dropdown', 'Most recent');
-    let elements = await driver.findElements(By.css(".titleColumn > span"));
-    let years = [];
-    for (let element of elements) {
-      // getting the year part using splits on parenthesis
-      // and converting to number using +
-      years.push(+(await element.getText()).split('(')[1].split(')')[0]);
-    }
-    /// we expect no year to be more than the first year
-    let wrongYears = years.filter(x => x > years[0]);
-    expect(wrongYears,
-      'Years before ' + years[0] + ' found later in list.'
-    ).to.be.empty;
+  this.When(/^I select 'Titles' in the drop\-down menu$/, async function () {
+    await driver.wait(until.elementLocated(by.css('a[aria-label="Titles"]')));
+    await driver.findElement(By.linkText('Titles')).click();
+    await sleep(2000);
+  });
 
+  this.When(/^I write "([^"]*)" in the searchfield$/, async function (Titles) {
+    let lookUp = await $('input[placeholder= "Search IMDb"]');
+    await lookUp.sendKeys(Titles);
+    await lookUp.sendKeys(selenium.Key.ENTER);
+    await sleep(2000);
+    await driver.wait(until.elementLocated(by.css('.result_text')));
+  });
+
+  this.Then(/^I expect get a list of "([^"]*)"$/, async function (expectedList) {
+    await driver.wait(until.elementLocated(By.css('div.article')));
+    let headline = await $('h1.findHeader');
+    let headlineText = await headline.getText();
+    expect(headlineText,
+      'Could not find the best offer'
+    ).to.equal('Displaying 200 results for "the best offer"');
     await sleep(2000);
   });
 
