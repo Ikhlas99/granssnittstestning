@@ -1,35 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="get-result-from-the-serchfield;reserch-at-the-help-center" tests="5" failures="0" skipped="0">
+    <testsuite name="user-profile;changing-of-login-detail" tests="12" failures="0" skipped="6">
         <properties>
-            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\keyWord.feature">
+            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\userProfile.feature">
             </property>
         </properties>
-        <testcase name="Given I am at the search page" classname="get-result-from-the-serchfield;reserch-at-the-help-center" time="10.6807267">
+        <testcase name="Given I am on IMDB website" classname="user-profile;changing-of-login-detail" time="10.3189071">
         </testcase>
-        <testcase name="When I click on menu" classname="get-result-from-the-serchfield;reserch-at-the-help-center" time="1.873416">
+        <testcase name="And I click at sign in" classname="user-profile;changing-of-login-detail" time="3.426178701">
         </testcase>
-        <testcase name="And I click at Help Center" classname="get-result-from-the-serchfield;reserch-at-the-help-center" time="2.527843201">
+        <testcase name="And I click sign in with IMBD" classname="user-profile;changing-of-login-detail" time="2.7400017">
         </testcase>
-        <testcase name="And I entered &quot;How can I delete personal information IMDB stores about me?&quot; in the searchfield" classname="get-result-from-the-serchfield;reserch-at-the-help-center" time="2.253093">
+        <testcase name="And I log into the my account with credentials" classname="user-profile;changing-of-login-detail" time="1.006613301">
         </testcase>
-        <testcase name="And I click at the search button to get the result" classname="get-result-from-the-serchfield;reserch-at-the-help-center" time="2.3541129">
+        <testcase name="And the last click sign in" classname="user-profile;changing-of-login-detail" time="5.9632646">
         </testcase>
-    </testsuite>
-    <testsuite name="get-result-from-the-serchfield;reserch-at-the-jobs" tests="5" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="C:\Users\ikhla\Desktop\granssnittstestning\features\keyWord.feature">
-            </property>
-        </properties>
-        <testcase name="Given I am at the search page" classname="get-result-from-the-serchfield;reserch-at-the-jobs" time="10.7823904">
+        <testcase name="Given That I choose account settings from my account" classname="user-profile;changing-of-login-detail" time="3.0306758">
         </testcase>
-        <testcase name="When I clicked the All-DropDownMenu button" classname="get-result-from-the-serchfield;reserch-at-the-jobs" time="2.020268499">
+        <testcase name="And I sign in with IMDb" classname="user-profile;changing-of-login-detail">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="And I select &apos;Titles&apos; in the drop-down menu" classname="get-result-from-the-serchfield;reserch-at-the-jobs" time="2.467315">
+        <testcase name="And I Sign-In" classname="user-profile;changing-of-login-detail">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="And I write &quot;the best offer&quot; in the searchfield" classname="get-result-from-the-serchfield;reserch-at-the-jobs" time="2.879315801">
+        <testcase name="And I chang my user Id" classname="user-profile;changing-of-login-detail">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="Then I expect get a list of &quot;the best offer&quot;" classname="get-result-from-the-serchfield;reserch-at-the-jobs" time="2.133713">
+        <testcase name="And I enterd a text into my Bio" classname="user-profile;changing-of-login-detail">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When I chang my password" classname="user-profile;changing-of-login-detail">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then I expect that I can sign in with the new user Id" classname="user-profile;changing-of-login-detail">
+            <skipped message="">
+            </skipped>
         </testcase>
     </testsuite>
 </testsuites>

@@ -10,6 +10,17 @@ module.exports = function () {
     await sleep(sleepTime)
   });
 
+  this.Given(/^I sign in with IMDb$/, function (callback) {
+    // Write code here that turns the phrase above into concrete actions
+    callback(null, 'pending');
+  });
+
+  this.Given(/^I Sign\-In$/, function (callback) {
+    // Write code here that turns the phrase above into concrete actions
+    callback(null, 'pending');
+  });
+
+
   this.Given(/^I chang my user Id$/, function () {
     // Write code here that turns the phrase above into concrete actions
 
@@ -25,7 +36,7 @@ module.exports = function () {
 
   });
 
-  this.Then(/^I expect that I can sign in with the new the user Id$/, function () {
+  this.Then(/^I expect that I can sign in with the new user Id$/, function () {
     // Write code here that turns the phrase above into concrete actions
 
   });
